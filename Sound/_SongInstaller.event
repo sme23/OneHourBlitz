@@ -1,0 +1,7 @@
+/*
+{
+#include "Songs/song.event"
+SongTable(songID,filename,XMusicGroup)
+}
+*/
+

@@ -1,0 +1,7 @@
+#define NumberOfAnims 202
+
+#include "_AnimDefinitions.event"
+#include "_RepointedAnimTable.event"
+
+#include "_AnimsInstaller.event"
+#include "_AnimMappings.event"

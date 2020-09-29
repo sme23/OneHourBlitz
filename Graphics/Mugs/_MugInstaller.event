@@ -1,0 +1,7 @@
+/*
+setMugEntry(mugID,gfxPointer,x1,y1,x2,y2)
+ALIGN 4
+gfxPointer:
+#incext PortraitFormatter "mug.png"
+*/
+
