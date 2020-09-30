@@ -375,10 +375,17 @@
 
 
 //playables
+#define Heckter 1
+#define Jaygan 2
+#define Naoto 3
+#define Sans 4
 
 //bosses
+#define Shark 0x47
 
 //generics
+#define Sharks 0x70
+
 
 //neutrals
 

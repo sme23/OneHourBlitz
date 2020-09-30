@@ -1,0 +1,146 @@
+EventPointerTable(MyChapterEventsID, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN PlayerUnits PlayerUnits  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Village(7,RedHouse1,2,4)
+Village(8,TanHouse1,8,4)
+Village(9,TanHouse2,4,8)
+Village(10,RedHouse2,8,12)
+END_MAIN
+
+MiscBasedEvents:
+DefeatAll(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+SansUnitGroup:
+UNIT Sans Bonewalker 0 Level(10,Ally,0) [2,4] 0 0 1 REDA2R5 [SteelSword,KillerLance,Elixir] NoAI
+UNIT
+
+PlayerUnits:
+UNIT Heckter Knight 0 Level(5,Ally,0) [1,13] 0 0 0 1 [IronLance,Vulnerary] NoAI
+UNIT Jaygan General 0 Level(1,Ally,0) [2,14] 0 0 0 1 [SilverLance,SteelSword] NoAI
+UNIT Naoto Cleric 0 Level(8,Ally,0) [1,14] 0 0 0 1 [Heal,Mend,Elixir] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Shark Soldier 0 Level(15,Enemy,0) [14,0] 0 0 0 1 [Javelin] NeverMoveAI
+UNIT Sharks Mercenary 0 Level(10,Enemy,1) [6,6] 0 0 0 1 [SteelSword] AttackInRangeAI
+UNIT Sharks Mercenary 0 Level(10,Enemy,1) [3,10] 0 0 0 1 [IronBlade] AttackInRangeAI
+UNIT Sharks Soldier 0 Level(10,Enemy,1) [6,13] 0 0 0 1 [IronLance] AttackInRangeAI
+UNIT Sharks Soldier 0 Level(10,Enemy,1) [2,2] 0 0 0 1 [IronLance] AttackInRangeAI
+UNIT Sharks Brigand 0 Level(10,Enemy,1) [13,5] 0 0 0 1 [HandAxe] AttackInRangeAI
+UNIT Sharks Brigand 0 Level(10,Enemy,1) [7,14] 0 0 0 1 [IronAxe] AttackInRangeAI
+UNIT Sharks Mage 0 Level(10,Enemy,1) [1,9] 0 0 0 1 [Fire] AttackInRangeAI
+UNIT Sharks Mage 0 Level(10,Enemy,1) [11,3] 0 0 0 1 [Thunder] AttackInRangeAI
+UNIT Sharks Cavalier 0 Level(10,Enemy,1) [12,12] 0 0 0 1 [IronSword,SteelLance] AttackInRangeAI
+UNIT Sharks Cavalier 0 Level(10,Enemy,1) [10,8] 0 0 0 1 [IronLance,SteelSword] AttackInRangeAI
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+MUSC Song_Harrier
+LOAD1 0 PlayerUnits
+ENUN
+LOAD1 0 EnemyUnits
+ENUN
+FADU 10
+Text(OpeningText)
+NoFade
+ENDA
+
+//setting battle quote because lazy
+PUSH
+ORG $9EC6CE
+SHORT Shark
+ORG $9EC6D4
+SHORT SharkBossQuote
+POP
+
+
+EndingScene:
+ASMC 0x85C71 0x381F5 0x37CF9 //show records screen
+STAL 120
+EVBIT_F 0x2
+MNTS 0x1 //return to title screen
+NoFade
+ENDA
+
+RedHouse1:
+SetBackground(HouseBG)
+MUSS Song_Sans
+Text(SansRecruitText)
+EndConvo
+LOAD1 0 SansUnitGroup
+ENUN
+MURE 10
+NoFade
+ENDA
+
+
+RedHouse2:
+MUSI
+SetBackground(HouseBG)
+Text(JavelinGetText)
+EndConvo
+GiveItem(Javelin,0xFFFF)
+MUNO
+NoFade
+ENDA
+
+TanHouse1:
+MUSI
+SetBackground(HouseBG)
+Text(LoreHouse1)
+EndConvo
+MUNO
+NoFade
+ENDA
+
+
+TanHouse2:
+MUSI
+SetBackground(HouseBG)
+Text(LoreHouse2)
+EndConvo
+MUNO
+NoFade
+ENDA
+
+

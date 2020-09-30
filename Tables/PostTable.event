@@ -4,4 +4,6 @@
 //rather than grab a new NMM i'll just do this because laziness
 #define SetChapterName(chapterID,textID) "PUSH; ORG ($8B0890 + (chapterID*148) + 0x70); SHORT textID textID; POP"
 
+#define SetBossMusic(charID,songID) "PUSH; ORG (0x758A60); SHORT charID 0; WORD songID; POP"
 
+SetBossMusic(Shark,Song_Stronger)

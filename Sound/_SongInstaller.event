@@ -5,3 +5,13 @@ SongTable(songID,filename,XMusicGroup)
 }
 */
 
+
+#include "Songs/harrier.event"
+SongTable(Song_Harrier,harrier,MapMusicGroup)
+
+#include "Songs/sans.event"
+SongTable(Song_Sans,sans,MapMusicGroup)
+
+#include "Songs/stronger.event"
+SongTable(Song_Stronger,stronger,BattleMusicGroup)
+

@@ -5,3 +5,29 @@ gfxPointer:
 #incext PortraitFormatter "mug.png"
 */
 
+setMugEntry(1,HeckterPortrait,2,4,2,2)
+ALIGN 4
+HeckterPortrait:
+#incext PortraitFormatter "Heckter.png"
+
+setMugEntry(2,JagenPortrait,3,6,3,4)
+ALIGN 4
+JagenPortrait:
+#incext PortraitFormatter "Jagen.png"
+
+setMugEntry(3,NaotoPortrait,3,7,3,5)
+ALIGN 4
+NaotoPortrait:
+#incext PortraitFormatter "Naoto.png"
+
+setMugEntry(4,SansPortrait,3,4,4,1)
+ALIGN 4
+SansPortrait:
+#incext PortraitFormatter "Sans.png"
+
+setMugEntry(5,SharkPortrait,3,6,3,4)
+ALIGN 4
+SharkPortrait:
+#incext PortraitFormatter "Shark.png"
+
+

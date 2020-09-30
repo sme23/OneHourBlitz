@@ -9,7 +9,7 @@ HP Bars[.][X]
 Set health bar display[X]
 
 # 0x160 PrologueChName
-Boss Rush[X]
+One Hour Blitz[X]
 
 #0x3A LearnedSkillText
 #first text ID in the free block
@@ -166,6 +166,90 @@ from entering spaces.[X]
 Units cannot enter[N]
 spaces where these[N]
 have been placed.[X]
+
+## HeckterName
+Heckter[X]
+
+## HeckterDesc
+Familiar, but different.[X]
+
+## JayganName
+Jaygan[X]
+
+## JayganDesc
+Wonder what his role is.[X]
+
+## NaotoName
+Naoto[X]
+
+## NaotoDesc
+she vibin[X]
+
+## SansName
+Sans[X]
+
+## SansDesc
+why[X]
+
+## SharkName
+Shark[X]
+
+## SharkDesc
+insert shark pun here[X]
+
+## SharksName
+Shark's[X]
+
+## SharksDesc
+Shark's underlings.[X]
+
+
+## OpeningText
+[OpenMidLeft][LoadFace][0x1][0x1]
+Hoh! Are these bandits in the village?[A][N]
+Let's kill them.[A][X]
+
+## SharkBossQuote
+What's that?[A][N]
+You think you can[N]
+stand up to the Shark?[A][X]
+
+## SansRecruitText
+[OpenMidRight][LoadFace][0xFF][0xFF]
+[OpenMidLeft][LoadFace][0x4][0x1]
+Eh? Bandits?[A][N]
+OK I'll join you.[A][X]
+
+## JavelinGetText
+[OpenMidRight][LoadFace][0xFF][0xFF]
+[OpenMidLeft][LoadFace][0x58][0x1]
+Bandits?[A][N]
+Here, take this.[A][X]
+
+## LoreHouse1
+[OpenMidRight][LoadFace][0xFF][0xFF]
+[OpenMidLeft][LoadFace][0x59][0x1]
+Who are you?[N]
+How did you get into my house?[A][N]
+Please leave.[A][X]
+
+## LoreHouse2
+[OpenMidRight][LoadFace][0xFF][0xFF]
+[OpenMidLeft][LoadFace][0x5F][0x1]
+Eh? Who's there?[A][N]
+Please, I don't have[N]
+anything valuable![A][N]
+Just don't hurt me![A][X]
+
+## SongNameHarrier
+Space Harrier[X]
+
+## SongNameStronger
+Team, This One's Stronger![X]
+
+## SongNameSans
+Megalovania[X]
+
 
 
 #include "statscreen_text.txt"

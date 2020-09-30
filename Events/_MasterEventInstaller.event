@@ -7,5 +7,7 @@
 #include "KillOpening.event"
 }
 
-
+{
+#include "Events.event"
+}
 

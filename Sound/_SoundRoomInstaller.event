@@ -28,7 +28,9 @@ POP
 
 ALIGN 4
 SoundRoomList:
-
+SoundRoomEntry(Song_Harrier,0,SongNameHarrier)
+SoundRoomEntry(Song_Stronger,0,SongNameStronger)
+SoundRoomEntry(Song_Sans,0,SongNameSans)
 SoundRoomTerminator
 
 /*
