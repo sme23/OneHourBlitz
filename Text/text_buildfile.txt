@@ -210,6 +210,7 @@ Hoh! Are these bandits in the village?[A][N]
 Let's kill them.[A][X]
 
 ## SharkBossQuote
+[OpenMidLeft][LoadFace][0x5][0x1]
 What's that?[A][N]
 You think you can[N]
 stand up to the Shark?[A][X]
